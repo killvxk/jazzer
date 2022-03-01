@@ -78,3 +78,10 @@ java_fuzz_target_test(
     srcs = ["RegexCanonEqInjection.java"],
     target_class = "com.example.RegexCanonEqInjection",
 )
+
+java_fuzz_target_test(
+    name = "RegexRoadblocks",
+    srcs = ["RegexRoadblocks.java"],
+    fuzzer_args = ["-use_value_profile=1"],
+    target_class = "com.example.RegexRoadblocks",
+)
