@@ -38,4 +38,5 @@ MAVEN_ARTIFACTS = [
     "com.unboundid:unboundid-ldapsdk:6.0.3",
     maven.artifact("org.apache.logging.log4j", "log4j-api", "2.14.1", testonly = True),
     maven.artifact("org.apache.logging.log4j", "log4j-core", "2.14.1", testonly = True),
+    maven.artifact("org.glassfish.web", "el-impl", "2.2", testonly = True),
 ]
